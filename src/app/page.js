@@ -6,7 +6,7 @@ import SignInPage from "./sign-in/[[...sign-in]]/page";
 export default function Home() {
   return (
     <>
-      <SignInPage routing="path"/>
+      <h1> Welcome to Snitch</h1>
     </>
   );
 }
