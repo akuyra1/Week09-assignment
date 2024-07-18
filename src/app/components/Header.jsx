@@ -6,13 +6,13 @@ import {
     SignedIn,
     SignedOut,
     } from '@clerk/nextjs';
-// import { auth } from '@clerk/nextjs/server'
+import { auth } from '@clerk/nextjs/server'
 import { ClerkProvider } from "@clerk/nextjs";
 
 
 const Header = () => {
     //destructure the userId from auth
-    // const { userId } = auth();  
+    const { userId } = auth();  
 
 
   return (
