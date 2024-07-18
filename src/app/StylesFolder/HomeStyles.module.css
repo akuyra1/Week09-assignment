@@ -1,0 +1,134 @@
+.bodyContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    /* background-color: red; */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.innerBodyContainerOne,
+.innerBodyContainerTwo {
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.innerBodyContainerOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50%;
+    border-radius: 1em;
+    /* background-color: green; */
+}
+
+.welcomeMessage {
+    margin: 0;
+    padding: 2rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.profilePic {
+    border-radius: 50%;
+    width: 20%;
+    height: 30%;
+    /* justify-self: flex-end; */
+    /* justify-items: flex-end; */
+    /* align-content: flex-end; */
+    /* align-self: flex-end;
+    align-items: flex-start; */
+    /* margin: 0 !important; */
+}
+
+/* ======  The container for user feed and post form */
+
+
+.innerBodyContainerTwo {
+    /* background-color: purple; */
+    display: flex;
+    border-radius: 1em;
+    padding: 1rem;
+}
+
+.userFeedContainerOne {
+    padding: 1rem;
+    margin: .1rem;
+    width: 100%;
+    /* background-color: rgb(128, 107, 107); */
+
+}
+
+.userFeedForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: #006aff;
+    opacity: 60%;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.userFeedForm input {
+    padding: .8rem;
+    border-radius: 1rem;
+    width: 90%;
+    height: 7rem;
+    margin: 1rem;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.userFeedForm input[placeholder] {
+    text-align: center;
+}
+
+.userFeedForm button {
+    border: 2px solid rgb(179, 179, 179);
+    color: rgb(179, 179, 179);
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 30%;
+}
+
+.userFeedForm button:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: .3s;
+}
+
+.userFeedContainerTwo {
+    display: flex;
+    flex-direction: column;
+    /* background-color: azure; */
+    margin: 1rem;
+    padding: 1rem;    
+    height: 100%;
+}
+.userFeedContainerTwo h1 {
+    text-align: center;
+    padding: 1rem;
+}
+.userFeedContainerThree {
+    /* background-color: bisque; */
+    /* border: 1px solid black; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.posts {
+    /* background-color: red; */
+    width: 90%;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 1rem;
+}

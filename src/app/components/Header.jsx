@@ -1,4 +1,7 @@
 import Link from "next/link"
+// import '@/app/StylesFolder/HeaderStyles.module.css'
+
+
 import {
     UserButton,
     SignInButton,
@@ -13,6 +16,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 const Header = () => {
     //destructure the userId from auth
     const { userId } = auth();  
+    console.log(`Your user ID is: ${userId}`)
 
 
   return (
@@ -29,19 +33,21 @@ const Header = () => {
                        Dashboard 
                     </div>
                 </Link>
-            </div>
-            <div className="text-white">
 
-            {/* authentication navigation */}
-            <SignedIn>
-                <UserButton />
-            </SignedIn>
-
-            <SignedOut>
-                <SignUpButton className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"> Sign Up</SignUpButton>
-                <SignInButton className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Sign In</SignInButton>
-            </SignedOut>
             </div>
+            {!userId && (     
+                <div className="text-white">                                     
+                    <SignedOut>
+                        <SignUpButton className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"> Sign Up</SignUpButton>
+                        <SignInButton className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Sign In</SignInButton>
+                    </SignedOut>
+                </div>
+            )}
+            <div className="container flex justify-end m-0">
+                <SignedIn>
+                    <UserButton afterSwitchSessionUrl="/" />
+                </SignedIn>
+            </div>    
         </nav>
     </>
   )

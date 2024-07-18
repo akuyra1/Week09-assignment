@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           <Header />
           <main className="container">
             <div className="flex items-start justify-center min-h-screen">
-              <div className="mt-20 text-5xl">
+              <div className="mt-20 text-3xl">
                 {children}
 
               </div>
