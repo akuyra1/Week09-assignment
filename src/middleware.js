@@ -2,7 +2,7 @@ import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 // i want to tell clerk what routes are protected using the matcher
 const isProtectedRoute = createRouteMatcher(
     //(.*) means it will also include any dynamic routes, like [id] folders and their pages.
-    ["/dashboard(.*)"]
+    ["/pages/(.*)"]
 )
 
 //to define public and protected routes 

@@ -1,6 +1,5 @@
 import Link from "next/link"
-// import '@/app/StylesFolder/HeaderStyles.module.css'
-
+import '@/app/StylesFolder/HeaderStyles.module.css'
 
 import {
     UserButton,
@@ -28,13 +27,14 @@ const Header = () => {
                        Snitch
                     </div>
                 </Link>
-                <Link href='/dashboard'>
+                <Link href='/pages/dashboard'>
                     <div className="text-lg uppercase font-bold text-white ml-10">
                        Dashboard 
                     </div>
                 </Link>
 
             </div>
+            <div className="container flex justify-end m-0">
             {!userId && (     
                 <div className="text-white">                                     
                     <SignedOut>
@@ -43,7 +43,9 @@ const Header = () => {
                     </SignedOut>
                 </div>
             )}
-            <div className="container flex justify-end m-0">
+            {userId && (
+                <Link href="profile" className="text-gray-300 hover:text-white mr-4">Profile</Link>
+            )}
                 <SignedIn>
                     <UserButton afterSwitchSessionUrl="/" />
                 </SignedIn>

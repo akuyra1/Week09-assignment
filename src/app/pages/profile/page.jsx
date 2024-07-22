@@ -1,14 +1,12 @@
 import Image from "next/image";
-import SignUpPage from "./pages/sign-up/[[...sign-up]]/page";
-import SignInPage from "./pages/sign-in/[[...sign-in]]/page";
+import SignUpPage from '@/app/pages/sign-up/[[...sign-up]]/page'
+import SignInPage from '@/app/pages/sign-in/[[...sign-in]]/page'
 import homeStyles from '@/app/StylesFolder/HomeStyles.module.css'
 import panda from '@/images/red-panda.png'
 export default function Home() {
   return (
     <>
-      <h1 className={homeStyles.homeBody}> Snitch</h1>
-      <p className={homeStyles.bodyText}>Welcome to Snitch, your social hub for connecting, sharing, and discovering! Start exploring and stay connected with friends and the latest updates.</p>
-      {/* <div className={homeStyles.bodyContainer}>
+      <div className={homeStyles.bodyContainer}>
         <div className={homeStyles.innerBodyContainerOne}>
           <h1 className={homeStyles.welcomeMessage}>Welcome to your profile Rambo</h1>
           <Image 
@@ -37,7 +35,7 @@ export default function Home() {
           <div className="user-feed-container-4"></div>
         </div>
 
-      </div> */}
+      </div>
     </>
   );
 }
