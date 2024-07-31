@@ -2,30 +2,34 @@ Requirements
 🎯 Use Clerk.com to set up user signup and login.
     - DONE
 🎯 Use the Clerk userId to associate posts with a user.
-    
+    - Not done
 🎯 Enable each user to create a profile associated with their userId, and a form to input their biography and location data, etc. with a URL similar to /user/[userId].
-
+    - Not done
 🎯 Enable users to create posts associated with the userId, and display those posts on the user's profile page
-
+ - Not done
 🎯 Show a 404 error if a user profile doesn't exist
-
+ - Not done
 🎯 Use at least 1 Radix UI Primitive or similar
+ - Not done
+
+
 
 Stretch Goals
 🏹 Enable users to visit other user profiles after seeing their posts on a global timeline
-
+    - not done
 🏹 Enable users to follow other users by creating a follower and followee relationship between two user profiles
-
+    - not done
 🏹 Enable users to like other users' posts by creating a user_id and liked_post relationship in a junction table
-
+    - not done
 🏹 A user's biography cannot be blank. If a user logs in but doesn't have a biography set, they should be asked to fill one in
+    - not done
 
 Please also provide an assignment reflection in your project README.md file.
 (Required)
 🎯 Please mention the requirements you met and which goals you achieved for this assignment.
-
+    - Not done majority of the requirements.
 🎯 Were there any requirements or goals that you were not quite able to achieve?
-
+    - Due to unforseen circumstances at home did not have time to do any work.
 🎯 If so, could you please tell us what was it that you found difficult about these tasks?
 
 (Optional)
